@@ -1,13 +1,3 @@
-<script>
-const text = 'Initial Commit'
-</script>
-
-<style lang="sass">
-main
-	font-size: 5rem
-</style>
-
-<template lang="pug">
-main
-	p { text }
-</template>
+<script src="App.ts"></script>
+<style src="./styles/global.sass" global></style>
+<template src="./App.pug"></template>

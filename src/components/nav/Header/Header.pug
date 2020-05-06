@@ -1,0 +1,11 @@
+div.wrap({style})
+  div.indent
+  header
+    span Try to guess colors:
+    nav
+      ul
+        +each('links as link (link.id)')
+          li
+            a(href="{link.to}")
+              span { link.text }
+  div.indent

@@ -1,0 +1,78 @@
+@import 'styles/vars.sass'
+
+/* Default outline
+*:focus,
+*:after:focus,
+*:before:focus
+  outline: none
+
+/* Box sizing rules
+*,
+*:before,
+*:after
+  box-sizing: border-box
+
+/* Remove default padding and list styles on ul, ol elements with a class attribute
+ul[class], ol[class]
+  padding: 0
+  list-style: none
+
+/* Remove default margin
+body, h1, h2, h3, h4, p, ul, ol, li, figure, figcaption, blockquote, dl, dd
+  margin: 0
+
+/* Set core body defaults
+body
+  min-height: 100vh
+  line-height: 1
+  background-color: #000000
+  color: #FFFFFF
+  font-size: $font-size
+  scroll-behavior: smooth
+  text-rendering: optimizeSpeed
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+
+/* A elements that don't have a class get default styles
+a:not([class])
+  text-decoration-skip-ink: auto
+
+/* Make images easier to work with
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+/* Natural flow and rhythm in articles by default
+article > * + *
+  margin-top: 1em
+
+/* Inherit fonts for inputs and buttons
+input, button, textarea, select
+  font: inherit
+
+/* Remove all animations and transitions for people that prefer not to see them
+@media (prefers-reduced-motion: reduce)
+  *
+    transition-duration: .01ms !important
+    animation-duration: .01ms !important
+    animation-iteration-count: 1 !important
+    scroll-behavior: auto !important
+
+/* Corrects block display not defined in IE6-9 & FF3
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary, main
+  display: block
+
+/* Corrects inline-block display not defined in IE6-9 & FF3
+audio, canvas, video
+  display: inline-block
+
+/* Remove the gray background color from active links in IE 10.
+a
+  text-decoration: none
+  background: transparent
+
+/* Removes default vertical scrollbar in IE6-9
+ * Improves readability and alignment browsers
+textarea
+  overflow: auto
+  vertical-align: top
