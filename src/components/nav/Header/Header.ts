@@ -36,7 +36,7 @@ const { r: randR, b: randB, g: randG }: Color = colors[randColorIdx]
 const luma: number = 0.2126 * randR + 0.7152 * randG + 0.0722 * randB
 let isColorBright: boolean = luma > 120
 
-const style = `
-background-color: rgb(${randR}, ${randG}, ${randB});
-color: ${isColorBright ? '#000000' : '#FFFFFF'}
-`.replace(/\n/, '')
+const vars = `
+--bgc:rgb(${randR}, ${randG}, ${randB});
+--c:${isColorBright ? '#000000' : '#FFFFFF'}
+`.replace(/[\n\r]/g, '')
