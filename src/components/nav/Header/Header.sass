@@ -20,9 +20,13 @@ header
       li
         position: relative
         span
-          opacity: 0.6
-        &.active span
+          opacity: 0.4
+          will-change: opacity
+          transition: opacity 0.5s
+        &.active span,
+        &:hover span
           opacity: 1
+          text-decoration: underline
         &:not(:last-child):after
           position: absolute
           left: 100%
