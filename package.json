@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public"
+    "dev": "routify -c server",
+    "server": "rollup -c -w",
+    "start": "sirv public --single"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "11.0.2",
     "@rollup/plugin-node-resolve": "^7.0.0",
+    "@sveltech/routify": "^1.7.8",
     "node-sass": "^4.14.0",
     "postcss": "^7.0.29",
     "pug": "^2.0.4",

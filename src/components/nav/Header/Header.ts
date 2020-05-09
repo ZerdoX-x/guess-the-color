@@ -1,12 +1,12 @@
+import { isActive, url } from '@sveltech/routify'
 interface Link {
-  readonly id: number,
   readonly to: string,
   readonly text: string
 }
 const links: ReadonlyArray<Link> = [
-  { id: 0, to: 'rgb', text: 'RGB' },
-  { id: 1, to: 'hex', text: 'HEX' },
-  { id: 2, to: '#', text: 'new color spaces soon' },
+  { to: '/rgb', text: 'RGB' },
+  { to: '/hex', text: 'HEX' },
+  { to: '/', text: 'new color spaces soon. maybe..' },
 ]
 
 interface Color {

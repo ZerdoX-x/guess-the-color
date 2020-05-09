@@ -1,7 +1,8 @@
+import HMR from  '@sveltech/routify/hmr'
 import App from './App.svelte'
 
-const app = new App({
+const app = HMR(App, {
 	target: document.body
-})
+}, 'routify-app')
 
 export default app

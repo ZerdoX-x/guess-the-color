@@ -4,8 +4,8 @@ header(style="{vars}")
     span Try to guess colors:
     nav
       ul
-        +each('links as link (link.id)')
-          li
-            a(href="{link.to}")
-              span { link.text }
+        +each('links as { text, to }')
+          li(class:active="{$isActive(to)}")
+            a(href="{$url(to)}")
+              span { text }
   .indent
