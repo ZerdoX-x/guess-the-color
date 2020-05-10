@@ -1,0 +1,36 @@
+.layout
+  cursor: pointer
+  /* positioning */
+  position: absolute
+  width: 100vw
+  height: 100vh
+  left: 0
+  top: 0
+  /* colors */
+  background-color: #000000
+  /* child management */
+  display: flex
+  align-items: center
+  justify-content: space-evenly
+  /* vars */
+  $glitch: 4px
+  .text,
+  figure
+    height: 200px
+    opacity: 1
+    will-change: opacity
+    transition: opacity 2s
+    &:hover
+      opacity: 0.3
+  .text
+    text-shadow: $glitch $glitch #FFFFFF
+    .code
+      font-size: 10rem
+    .caption
+      font-size: 2.35rem
+  figure
+    position: relative
+    .dupe
+      position: absolute
+      left: 0
+      transform: translate($glitch, $glitch)
